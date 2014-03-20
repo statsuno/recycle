@@ -13,7 +13,6 @@
 		CAA3E18418D2888900D5890A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAA3E18218D2888900D5890A /* InfoPlist.strings */; };
 		CAA3E18618D2888900D5890A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3E18518D2888900D5890A /* main.m */; };
 		CAA3E18A18D2888900D5890A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3E18918D2888900D5890A /* AppDelegate.m */; };
-		CAA3E18D18D2888900D5890A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA3E18B18D2888900D5890A /* Main.storyboard */; };
 		CAA3E19018D2888900D5890A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3E18F18D2888900D5890A /* ViewController.m */; };
 		CAA3E19218D2888900D5890A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA3E19118D2888900D5890A /* Images.xcassets */; };
 		CAA3E19918D2888900D5890A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA3E19818D2888900D5890A /* XCTest.framework */; };
@@ -21,6 +20,8 @@
 		CAA3E19B18D2888900D5890A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA3E17D18D2888900D5890A /* UIKit.framework */; };
 		CAA3E1A318D2888900D5890A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAA3E1A118D2888900D5890A /* InfoPlist.strings */; };
 		CAA3E1A518D2888900D5890A /* recycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3E1A418D2888900D5890A /* recycleTests.m */; };
+		CAA3E1B218D84FB200D5890A /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA3E1B118D84FB200D5890A /* sample.png */; };
+		CAA3E1B518D84FF100D5890A /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3E1B418D84FF100D5890A /* SecondView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		CAA3E18718D2888900D5890A /* recycle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "recycle-Prefix.pch"; sourceTree = "<group>"; };
 		CAA3E18818D2888900D5890A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CAA3E18918D2888900D5890A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CAA3E18C18D2888900D5890A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAA3E18E18D2888900D5890A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CAA3E18F18D2888900D5890A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CAA3E19118D2888900D5890A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +53,9 @@
 		CAA3E1A018D2888900D5890A /* recycleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "recycleTests-Info.plist"; sourceTree = "<group>"; };
 		CAA3E1A218D2888900D5890A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CAA3E1A418D2888900D5890A /* recycleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = recycleTests.m; sourceTree = "<group>"; };
+		CAA3E1B118D84FB200D5890A /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample.png; path = ../../../../Desktop/SavePng/sample.png; sourceTree = "<group>"; };
+		CAA3E1B318D84FF100D5890A /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
+		CAA3E1B418D84FF100D5890A /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,13 @@
 		CAA3E17F18D2888900D5890A /* recycle */ = {
 			isa = PBXGroup;
 			children = (
+				CAA3E1B118D84FB200D5890A /* sample.png */,
 				CAA3E18818D2888900D5890A /* AppDelegate.h */,
 				CAA3E18918D2888900D5890A /* AppDelegate.m */,
-				CAA3E18B18D2888900D5890A /* Main.storyboard */,
 				CAA3E18E18D2888900D5890A /* ViewController.h */,
 				CAA3E18F18D2888900D5890A /* ViewController.m */,
+				CAA3E1B318D84FF100D5890A /* SecondView.h */,
+				CAA3E1B418D84FF100D5890A /* SecondView.m */,
 				CAA3E19118D2888900D5890A /* Images.xcassets */,
 				CAA3E18018D2888900D5890A /* Supporting Files */,
 			);
@@ -196,7 +201,7 @@
 		CAA3E16E18D2888900D5890A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "龍野翔";
 				TargetAttributes = {
 					CAA3E19618D2888900D5890A = {
@@ -230,7 +235,7 @@
 			files = (
 				CAA3E19218D2888900D5890A /* Images.xcassets in Resources */,
 				CAA3E18418D2888900D5890A /* InfoPlist.strings in Resources */,
-				CAA3E18D18D2888900D5890A /* Main.storyboard in Resources */,
+				CAA3E1B218D84FB200D5890A /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +256,7 @@
 			files = (
 				CAA3E19018D2888900D5890A /* ViewController.m in Sources */,
 				CAA3E18A18D2888900D5890A /* AppDelegate.m in Sources */,
+				CAA3E1B518D84FF100D5890A /* SecondView.m in Sources */,
 				CAA3E18618D2888900D5890A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,14 +288,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CAA3E18B18D2888900D5890A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAA3E18C18D2888900D5890A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CAA3E1A118D2888900D5890A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -305,7 +303,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -344,7 +341,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -402,7 +398,6 @@
 		CAA3E1AC18D2888900D5890A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/recycle.app/recycle";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -425,7 +420,6 @@
 		CAA3E1AD18D2888900D5890A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/recycle.app/recycle";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -460,6 +454,7 @@
 				CAA3E1AA18D2888900D5890A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAA3E1AB18D2888900D5890A /* Build configuration list for PBXNativeTarget "recycleTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +463,7 @@
 				CAA3E1AD18D2888900D5890A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

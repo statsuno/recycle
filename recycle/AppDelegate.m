@@ -7,14 +7,41 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
+@interface AppDelegate()
+
+@property (nonatomic, strong) UINavigationController *naviCtrl;
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
+        // Override point for customization after application launch.
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        ViewController *c = ViewController.new;
+        self.naviCtrl = [[UINavigationController alloc] initWithRootViewController:c];
+        self.window.rootViewController = self.naviCtrl;
+        self.naviCtrl.navigationBar.translucent = NO;
+        self.naviCtrl.toolbar.translucent = NO;
+        [self.window makeKeyAndVisible];
+        return YES;
 }
+
+- (IBAction)run:(id)sender {
+    UIImage *image = ImageView.image;
+    NSData *data = UIImagePNGRepresentation(image);
+    NSString *filePath = [NSString stringWithFormat:@"%@/test.png" , [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]];
+    NSLog(@"%@", filePath);
+    if ([data writeToFile:filePath atomically:YES]) {
+        NSLog(@"OK");
+    } else {
+        NSLog(@"Error");
+    }
+}
+  
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
